@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+ <p id ="nhap"></p>
+Total is: <p id ="tong"></p>
+
+<script>
+    let total = 0;
+    let num = parseInt(prompt("Enter a number to print. Enter -1 to quit: "));
+    while (num!= -1){
+        document.getElementById("nhap").innerHTML+= "The number put in is: " + num + '<br>';
+    total += num;
+    num = parseInt(prompt("Enter a number to print. Enter -1 to quit "));
+    }
+    document.getElementById("tong").innerHTML = total;
+</script>
+</body>
+</html>
